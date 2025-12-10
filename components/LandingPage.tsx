@@ -305,12 +305,12 @@ const LandingPage: React.FC<{ onLaunchDemo: () => void }> = ({ onLaunchDemo }) =
         <div className="max-w-7xl mx-auto px-6">
             <div className="flex items-center justify-between mb-12">
                 <div>
-                     <div className="inline-block px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-xs font-bold mb-2">VALIDACIÓN CLÍNICA</div>
-                    <h2 className="text-3xl font-bold text-slate-900">Probado en Pacientes Reales</h2>
+                     <div className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-bold mb-2">FASE DE PROYECTO</div>
+                    <h2 className="text-3xl font-bold text-slate-900">Validación Local: El Eslabón Perdido</h2>
                 </div>
                 <div className="hidden md:block">
                      <div className="flex -space-x-4">
-                        <div className="w-12 h-12 rounded-full bg-slate-200 border-2 border-white flex items-center justify-center font-bold text-slate-500">60+</div>
+                        <div className="w-12 h-12 rounded-full bg-slate-200 border-2 border-white flex items-center justify-center font-bold text-slate-500 text-xs">META</div>
                         <div className="w-12 h-12 rounded-full bg-emerald-600 border-2 border-white flex items-center justify-center text-white font-bold text-xs p-1 text-center">HUN</div>
                      </div>
                 </div>
@@ -318,25 +318,28 @@ const LandingPage: React.FC<{ onLaunchDemo: () => void }> = ({ onLaunchDemo }) =
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-slate-600 mb-6 text-lg">
-                En colaboración con el Hospital Universidad del Norte, hemos diseñado un protocolo para diferenciar estados de salud con mayor precisión que los marcadores tradicionales.
+                La ciencia del microbioma es sólida y se aplica clínicamente en EE.UU. y Europa. Sin embargo, <strong>no existen datos de referencia para la población de Barranquilla</strong>.
+              </p>
+              <p className="text-slate-600 mb-6">
+                 Los algoritmos entrenados con dietas occidentales fallan al interpretar nuestra dieta caribeña y genética local. Necesitamos calibrar la brújula antes de navegar.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3 text-slate-700">
-                    <div className="mt-1 bg-emerald-100 p-1 rounded-full"><Check className="w-3 h-3 text-emerald-600" /></div>
-                    <span><strong>Hipótesis:</strong> Distinción clara entre Disbiosis Severa vs. Sobrepeso Metabólico.</span>
+                    <div className="mt-1 bg-amber-100 p-1 rounded-full"><Target className="w-3 h-3 text-amber-600" /></div>
+                    <span><strong>Desafío Actual:</strong> Las bases de datos globales no representan la diversidad microbiana del Caribe.</span>
                 </li>
                 <li className="flex items-start gap-3 text-slate-700">
                     <div className="mt-1 bg-emerald-100 p-1 rounded-full"><Check className="w-3 h-3 text-emerald-600" /></div>
-                    <span><strong>Objetivo:</strong> Correlacionar datos 16S con historias clínicas (Meta &gt;90%).</span>
+                    <span><strong>Objetivo del Piloto:</strong> Recolectar 60 muestras locales para establecer la "Línea Base Barranquilla".</span>
                 </li>
                 <li className="flex items-start gap-3 text-slate-700">
-                    <div className="mt-1 bg-emerald-100 p-1 rounded-full"><Check className="w-3 h-3 text-emerald-600" /></div>
-                    <span><strong>Capacidad Local:</strong> Todo el proceso (wet-lab & dry-lab) realizado en Barranquilla.</span>
+                    <div className="mt-1 bg-blue-100 p-1 rounded-full"><Zap className="w-3 h-3 text-blue-600" /></div>
+                    <span><strong>Capacidad Instalada:</strong> Ya contamos con la tecnología y el equipo científico local para ejecutarlo.</span>
                 </li>
               </ul>
             </div>
             <div className="bg-white p-6 rounded-2xl shadow-lg border border-slate-100 h-80">
-              <h3 className="text-sm font-bold text-slate-500 mb-4 text-center">Indice de Diversidad Ecológica (Proyección)</h3>
+              <h3 className="text-sm font-bold text-slate-500 mb-4 text-center">Resultados Esperados (Proyección)</h3>
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={pocData}>
                   <CartesianGrid strokeDasharray="3 3" vertical={false} />
@@ -581,7 +584,7 @@ const LandingPage: React.FC<{ onLaunchDemo: () => void }> = ({ onLaunchDemo }) =
                      </div>
                      <div>
                        <p className="font-bold text-slate-900 text-lg">Dr. Eder Hernández Ruíz</p>
-                       <p className="text-sm text-blue-600 font-medium mb-1">Director Médico</p>
+                       <p className="text-sm text-blue-600 font-medium mb-1">Asesor Médico</p>
                        <p className="text-sm text-slate-600 leading-snug">
                          Líder del Programa Clínica de Obesidad (HUN). Garante de la aplicabilidad clínica y seguridad del paciente.
                        </p>
@@ -595,7 +598,7 @@ const LandingPage: React.FC<{ onLaunchDemo: () => void }> = ({ onLaunchDemo }) =
               <div className="mb-6">
                  <p className="text-slate-600 mb-2">Requerimiento para ejecución del proyecto:</p>
                  <p className="text-3xl font-bold text-slate-900">30 Millones COP</p>
-                 <p className="text-sm text-emerald-600 font-medium mt-1">Duración estimada: 6 Meses</p>
+                 <p className="text-sm text-emerald-600 font-medium mt-1">Duración estimada: 12 Meses</p>
               </div>
               <ul className="mb-8 space-y-3 text-slate-700">
                 <li className="flex gap-3"><CheckCircle className="w-5 h-5 text-emerald-500" /> <strong>60 Voluntarios</strong> (Hospital Universidad del Norte)</li>
