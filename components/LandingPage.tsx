@@ -558,57 +558,27 @@ const LandingPage: React.FC<{ onLaunchDemo: () => void }> = ({ onLaunchDemo }) =
       {/* Slide 10: Footer / Team */}
       <footer className="py-20 bg-white border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-12 mb-16">
-            <div>
-               <h2 className="text-2xl font-bold text-slate-900 mb-8">Liderazgo Científico</h2>
-               
-               <div className="space-y-8">
-                  {/* Rafik */}
-                  <div className="flex gap-4">
-                     <div className="w-16 h-16 bg-slate-200 rounded-full overflow-hidden border border-slate-300 shrink-0">
-                       <img src="https://ui-avatars.com/api/?name=Rafik+Neme&background=0D8ABC&color=fff" alt="Rafik" />
-                     </div>
-                     <div>
-                       <p className="font-bold text-slate-900 text-lg">Rafik Tarek Neme Garrido, Dr. rer. nat.</p>
-                       <p className="text-sm text-emerald-600 font-medium mb-1">Director Científico (CSO)</p>
-                       <p className="text-sm text-slate-600 leading-snug">
-                         Experto en genómica evolutiva. Visionario detrás del algoritmo ISEM para traducir complejidad biológica en utilidad clínica.
-                       </p>
-                     </div>
-                  </div>
-
-                  {/* Eder */}
-                  <div className="flex gap-4">
-                     <div className="w-16 h-16 bg-slate-200 rounded-full overflow-hidden border border-slate-300 shrink-0">
-                       <img src="https://ui-avatars.com/api/?name=Eder+Hernandez&background=059669&color=fff" alt="Eder" />
-                     </div>
-                     <div>
-                       <p className="font-bold text-slate-900 text-lg">Dr. Eder Hernández Ruíz</p>
-                       <p className="text-sm text-blue-600 font-medium mb-1">Asesor Médico</p>
-                       <p className="text-sm text-slate-600 leading-snug">
-                         Líder del Programa Clínica de Obesidad (HUN). Garante de la aplicabilidad clínica y seguridad del paciente.
-                       </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
+          <div className="max-w-3xl mx-auto mb-16">
+            <h2 className="text-2xl font-bold text-slate-900 mb-8 text-center">Liderazgo Científico</h2>
             
             <div className="bg-slate-50 p-8 rounded-2xl border border-slate-200">
-              <h2 className="text-2xl font-bold text-slate-900 mb-6">Próximo Hito: Validación Local</h2>
-              <div className="mb-6">
-                 <p className="text-slate-600 mb-2">Requerimiento para ejecución del proyecto:</p>
-                 <p className="text-3xl font-bold text-slate-900">30 Millones COP</p>
-                 <p className="text-sm text-emerald-600 font-medium mt-1">Duración estimada: 12 Meses</p>
-              </div>
-              <ul className="mb-8 space-y-3 text-slate-700">
-                <li className="flex gap-3"><CheckCircle className="w-5 h-5 text-emerald-500" /> <strong>60 Voluntarios</strong> (Hospital Universidad del Norte)</li>
-                <li className="flex gap-3"><CheckCircle className="w-5 h-5 text-emerald-500" /> Reactivos y Secuenciación Local</li>
-                <li className="flex gap-3"><CheckCircle className="w-5 h-5 text-emerald-500" /> Validación de Algoritmo en Población Caribe</li>
-              </ul>
-              <div>
-                <p className="font-bold text-slate-900 mb-1">Contacto Directo</p>
-                <a href="mailto:rneme@uninorte.edu.co" className="text-emerald-600 hover:underline font-medium text-lg">rneme@uninorte.edu.co</a>
-              </div>
+               {/* Rafik */}
+               <div className="flex flex-col md:flex-row gap-6 items-center md:items-start text-center md:text-left">
+                  <div className="w-24 h-24 bg-slate-200 rounded-full overflow-hidden border-2 border-emerald-100 shrink-0 shadow-sm">
+                    <img src="https://ui-avatars.com/api/?name=Rafik+Neme&background=0D8ABC&color=fff" alt="Rafik" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="flex-1">
+                    <p className="font-bold text-slate-900 text-xl mb-1">Rafik Tarek Neme Garrido, Dr. rer. nat.</p>
+                    <p className="text-emerald-600 font-semibold mb-3">Director Científico (CSO)</p>
+                    <p className="text-slate-600 leading-relaxed mb-6">
+                      Experto en genómica evolutiva y aplicación de técnicas de genómica a problemas biológicos complejos. Líder del grupo de Genómica y Biodiversidad y visionario detrás del algoritmo ISEM.
+                    </p>
+                    <div className="pt-6 border-t border-slate-200">
+                      <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Contacto Directo</p>
+                      <a href="mailto:rneme@uninorte.edu.co" className="text-emerald-600 hover:underline font-medium text-lg">rneme@uninorte.edu.co</a>
+                    </div>
+                  </div>
+               </div>
             </div>
           </div>
           
